@@ -1,0 +1,12 @@
+    @Test (dataProvider="emails")
+	public void DataDrivenEmailTest(String[] row) {
+		// TODO: Create a data driven version of EmailTest()
+		homePage = this.goToHomePage();
+		EmailPage emailPage = homePage.clickEmailLink();
+		Assert.assertEquals(emailPage.getTitle(), "Submit Your Details");
+
+		String name = row[0];
+	    String email = row[1];
+	    homePage = emailPage.submitEntry(name, email);
+		Assert.assertEquals(emailPage.getTitle(), "Welcome to the Carlo's Website");
+	}

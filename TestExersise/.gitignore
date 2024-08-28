@@ -1,0 +1,50 @@
+# Eclipse specific files
+.project
+.classpath
+.settings/
+.metadata/
+
+# Java and Maven build files
+target/
+bin/
+*.class
+
+# Local configuration files
+*.local
+*.swp
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# Log files
+*.log
+
+# Maven specific files
+.mvn/
+!**/src/main/**/assembly-descriptor.xml
+!**/src/test/**/assembly-descriptor.xml
+
+# Eclipse Plugin related
+.springBeans
+
+# Compiled class file
+*.class
+
+# BlueJ files
+.bluej/
+
+# Maven files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse WTP specific files
+.settings/
+.classpath
+.project
+
+# Test outputs
+test-output/
+target/
